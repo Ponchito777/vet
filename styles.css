@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Secciones principales */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+#bienvenida h2, #servicios h2, #llamado h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+#bienvenida p, #llamado p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Sección de servicios */
+#servicios {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+#servicios .servicio {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#servicios h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#servicios p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Llamado a la acción */
+#llamado a {
+    color: #4CAF50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#llamado a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}

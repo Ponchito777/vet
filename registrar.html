@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Mascota - Veterinaria Amigo Fiel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Registrar Mascota</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agendar.html">Agendar Cita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registrar">
+            <h2>Formulario para Registrar una Mascota</h2>
+            <p>Completa el siguiente formulario para registrar a tu mascota en nuestro sistema.</p>
+            <form id="formRegistrar">
+                <label for="nombreDueño">Nombre del dueño:</label>
+                <input type="text" id="nombreDueño" name="nombreDueño" required placeholder="Escribe tu nombre">
+
+                <label for="telefonoDueño">Teléfono de contacto:</label>
+                <input type="tel" id="telefonoDueño" name="telefonoDueño" required placeholder="Ej. 555-555-5555">
+
+                <label for="correoDueño">Correo electrónico:</label>
+                <input type="email" id="correoDueño" name="correoDueño" required placeholder="tu@correo.com">
+
+                <label for="nombreMascota">Nombre de la mascota:</label>
+                <input type="text" id="nombreMascota" name="nombreMascota" required placeholder="Escribe el nombre de tu mascota">
+
+                <label for="especie">Especie:</label>
+                <select id="especie" name="especie" required>
+                    <option value="" disabled selected>Selecciona una especie</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="ave">Ave</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" name="raza" placeholder="Escribe la raza de tu mascota">
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required placeholder="Ej. 3">
+
+                <label for="comentarios">Comentarios adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe detalles adicionales si es necesario"></textarea>
+
+                <button type="submit">Registrar Mascota</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Veterinaria Amigo Fiel. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="registrar.js"></script>
+</body>
+</html>

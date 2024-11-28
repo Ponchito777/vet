@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita - Veterinaria Amigo Fiel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Agendar Cita</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registrar.html">Registrar Mascota</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="agendar">
+            <h2>Formulario para Agendar una Cita</h2>
+            <p>Por favor, completa la siguiente información para agendar tu cita con nosotros.</p>
+            <form id="formAgendar">
+                <label for="nombre">Nombre del dueño:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 555-555-5555">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required placeholder="tu@correo.com">
+
+                <label for="nombreMascota">Nombre de la mascota:</label>
+                <input type="text" id="nombreMascota" name="nombreMascota" required placeholder="Escribe el nombre de tu mascota">
+
+                <label for="servicio">Servicio requerido:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="" disabled selected>Selecciona un servicio</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="vacunacion">Vacunación</option>
+                    <option value="cirugia">Cirugía</option>
+                    <option value="estetica">Estética y cuidado</option>
+                </select>
+
+                <label for="fecha">Fecha preferida:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora preferida:</label>
+                <input type="time" id="hora" name="hora" required>
+
+                <button type="submit">Agendar Cita</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Veterinaria Amigo Fiel. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="agendar.js"></script>
+</body>
+</html>
